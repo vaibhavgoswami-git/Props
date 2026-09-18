@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.parent {
+  min-height: 100vh;
+  background: rgb(0, 0, 0);
+}
+
+nav {
+    
+  padding: 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0000009c;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(2px);
+}
+
+h1 {
+  letter-spacing: 8px;
+  margin-left: 40px;
+  color: white;
+}
+
+.right {
+  display: flex;
+  font-size: 19px;
+  gap: 40px;
+  margin-right: 40px;
+}
+
+a {
+
+  text-decoration: none;
+  color: rgb(254, 253, 253);
+}
+.hvr:hover {
+  color: rgb(200, 200, 200);
+  transform: scale(0.97);
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+#pics {
+  width: 80%;
+  max-width: 800px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 1px solid whitesmoke;
+}
+.handle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6rem;
+  margin-bottom: 50px;
+}
+
+button {
+  padding: 20px;
+  border: none;
+  color: #f9fafb;
+  background-color: transparent;
+}
+button:active {
+  transform: scale(1.08);
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 40px;
+  margin: 0px 40px;
+}
+
+.card1 {
+  margin: 10px 0px;
+  text-align: center;
+  background: rgb(1, 1, 1);
+  border-radius: 20px;
+  overflow: hidden;
+  padding-bottom: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  border: 1px solid seashell;
+}
+
+.images {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  object-position: center;
+}
+
+.card1 h2 {
+  font-size: 20px;
+  margin: 18px 20px 10px;
+  font-weight: 400;
+  color: white;
+}
+
+.card1 p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 20px;
+  color: #b7b7b7;
+}
+.card1:hover {
+  transform: scale(1.01);
+  border: 1px solid rgb(101, 145, 255);
+}
+footer {
+  display: flex;
+  color: aliceblue;
+  justify-content: center;
+  align-content: center;
+  background-color: #1c1c1c;
+  padding: 20px;
+}
+h3 {
+  font-weight: 400;
+  word-spacing: 5px;
+}
+.main {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.main h1 {
+  margin: 0;
+  font-size: 60px;
+  letter-spacing: 3px;
+}
+
+.main p {
+  max-width: 600px;
+  margin: 20px 0;
+  color: #b7b7b7;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.view-more {
+  display: inline-block;
+  padding: 14px 28px;
+  border: 1px solid white;
+  border-radius: 30px;
+  background: white;
+  color: black;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.main button:hover {
+  transform: scale(1.05);
+}
+#home {
+    scroll-margin-top: 200px;
+}
+.parent{
+  height: 100%;
+  width: 100%;
+}
+
+.hello{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 📱 Mobile */
+@media (max-width: 600px) {
+  nav {
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  h1 {
+    margin-left: 0;
+    font-size: 26px;
+  }
+
+  .right {
+    margin-right: 0;
+    gap: 20px;
+    font-size: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* Carousel */
+  .handle {
+    margin-top: 3rem;
+    gap: 5px;
+  }
+
+  #pics {
+    width: 75%;
+  }
+
+  button {
+    padding: 10px;
+  }
+
+  /* Cards */
+  .projects {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .card1 {
+    margin-top: 20px;
+  }
+
+  .images {
+    height: 220px;
+  }
+}
+.main h1 {
+  font-size: 38px;
+}
+
+.main p {
+  font-size: 15px;
+}
