@@ -7,10 +7,10 @@ import Hero from './components/hero'
 
 function App() {
 
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
-
+ useEffect(() => {
+  window.history.replaceState(null, "", window.location.pathname)
+  window.scrollTo(0, 0)
+}, [])
   const projects = [
     {
       id: 1,
